@@ -15,6 +15,18 @@
             color: white;
             font-family: Arial, sans-serif;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            background-color: #121212;
+            color: #333;
+            font-size: 16px; /* Default font size for consistency */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             /* display: none; <- Crashes Chrome on hover */
@@ -30,7 +42,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            background-color: #2c2c2c;
             padding: 10px;
             border-radius: 8px;
         }
@@ -48,14 +59,21 @@
 
         /* Button styling */
         .custom-number-input button {
+            background-color: #4CAF50;
             width: 30px;
             height: 30px;
             font-size: 1rem;
             padding: 0;
-            border-radius: 50%;
+            border-radius: 5px;
+            border: none;
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        
+        .custom-number-input button:hover {
+           background-color: #45a049;  /* Slightly darker green */
         }
 
         /* Larger touch-friendly buttons for mobile */
